@@ -1,0 +1,37 @@
+.sb-social-icon {
+  mask: var(--icon) no-repeat;
+  mask-size: 100% 100%;
+  @apply block h-full w-full bg-current fill-current text-inherit;
+
+  &.facebook {
+    --icon: url('../../assets/images/facebook.svg');
+  }
+
+  &.github {
+    --icon: url('../../assets/images/github.svg');
+  }
+
+  &.instagram {
+    --icon: url('../../assets/images/instagram.svg');
+  }
+
+  &.linkedin {
+    --icon: url('../../assets/images/linkedin.png');
+  }
+
+  &.youtube {
+    --icon: url('../../assets/images/youtube.svg');
+  }
+
+  &.dribbble {
+    --icon: url('../../assets/images/dribbble.svg');
+  }
+
+  &.notion {
+    --icon: url('../../assets/images/notion.svg');
+  }
+
+  &.link {
+    --icon: url('../../assets/images/link.svg');
+  }
+}
