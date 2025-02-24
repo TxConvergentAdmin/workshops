@@ -5,7 +5,7 @@ import { defineConfig } from './src/helpers/config-helper';
 
 export default defineConfig({
   lang: 'en-US',
-  site: 'https://slate-blog-demo.vercel.app',
+  site: 'https://workshops.txconvergent.org/',
   avatar: '/txc.png',
   title: 'TX Convergent Workshops',
   description: 'Access all materials from past Convergent workshops',
