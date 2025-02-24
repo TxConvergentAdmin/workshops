@@ -4,7 +4,7 @@ import i18next from '@/i18n';
 import Search from '@/components/search';
 import PageLayout from '@/components/layouts/PageLayout.astro';
 import slateConfig from '~@/slate.config';
-import TagFilter from './TagFilter.jsx'; // Import React component
+import TagFilter from './_tag-filter.jsx'; // Import React component
 
 const postCollection = await getCollection('post', ({ data }) => {
   return import.meta.env.DEV || data.draft !== true;
@@ -40,7 +40,7 @@ const posts = [...postCollection]
   .map((post) => ({
     id: post.id,
     slug: post.slug,
-    url: `/blog/${post.slug}`,
+    url: `/workshop/${post.slug}`,
     data: post.data,
   }));
 ---

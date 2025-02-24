@@ -25,7 +25,7 @@ export async function GET(context) {
     .map(async (post) => {
       const content = await parseMarkdownToHtml(post.body);
       return {
-        link: `/blog/${post.slug}/`,
+        link: `/workshop/${post.slug}/`,
         title: post.data.title,
         content: sanitizeHtml(content, {
           allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
