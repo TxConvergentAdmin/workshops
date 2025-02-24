@@ -1,10 +1,10 @@
 ---
 title: Tech Interviewing
-description: This repo maintains revisons and translations to the list of 40 questions I ask myself each year and each decade.
+description: This workshop reviews the overall structure of a tech interview and walks through leetcode questions in divisions of beginner, intermediate, and advanced.
 tags:
   - Spring-25
   - Tech
-pubDate: 2025-02-09
+pubDate: 2025-02-10
 ---
 
 ## Description
