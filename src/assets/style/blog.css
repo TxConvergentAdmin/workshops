@@ -22,9 +22,15 @@
   }
 
   a {
-    @apply text-indigo11 underline-offset-4 transition-all hover:underline decoration-indigo6;
+    color: #3AC7F4;
+    text-underline-offset: 4px;
+    transition: all 0.2s ease-in-out;
   }
-
+  
+  a:hover {
+    text-decoration: underline;
+    color: #2BAFDA; /* Slightly darker shade on hover */
+  }
   /* a::after{
     @apply text-slate8 mx-0.5;
     content: '↗';

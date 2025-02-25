@@ -30,4 +30,16 @@ const postCollection = defineCollection({
     ),
 });
 
-export const collections = { post: postCollection };
+const scheduleCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    pubDate: z.date(),
+    description: z.string().optional(),
+  }),
+});
+
+export const collections = {
+  post: postCollection,
+  schedule: scheduleCollection
+};

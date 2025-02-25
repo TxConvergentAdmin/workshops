@@ -1,0 +1,71 @@
+---
+import dayjs from 'dayjs';
+import { type CollectionEntry, getEntry } from 'astro:content';
+import PageLayout from '@/components/layouts/PageLayout.astro';
+import ArticleJsonLd from '@/components/json-ld/article.astro';
+import Button from '@/components/button';
+import AffixTitle from '@/components/affix-title';
+import { getFullTitle } from '@/helpers/utils';
+import 'remark-block-containers/css';
+import '@/assets/style/blog.css';
+
+// Fetch the Markdown entry for the workshop schedule
+const post = await getEntry('schedule', 'schedule-sp25');
+
+if (!post) {
+  throw new Error('Workshop schedule not found');
+}
+
+// Extract Markdown content and metadata
+const { Content, remarkPluginFrontmatter, headings } = await post.render();
+const lastModifiedDate = dayjs(
+  remarkPluginFrontmatter?.lastModified ? remarkPluginFrontmatter.lastModified : undefined
+);
+const lastModified = lastModifiedDate.isSame(dayjs(), 'year')
+  ? lastModifiedDate.format('MMM DD')
+  : lastModifiedDate.format('MMM DD, YYYY');
+const pubDate = dayjs(post.data.pubDate);
+const formattedPubDate = pubDate.isSame(dayjs(), 'year')
+  ? pubDate.format('MMM DD')
+  : pubDate.format('MMM DD, YYYY');
+---
+
+<PageLayout title={post.data.title} description={post.data.description}>
+  <ArticleJsonLd
+    slot="json-ld"
+    title={getFullTitle(post.data.title)}
+    description={post.data.description}
+    pubDate={post.data.pubDate}
+    lastModified={lastModifiedDate.toDate()}
+  />
+
+  <AffixTitle title={post.data.title} offsetTop={100} client:idle />
+
+  <div class="mb-16" slot="header">
+    <Button id="back">←</Button>
+  </div>
+
+  <div class="blog-content">
+    <div class="mb-16">
+      <h1>{post.data.title}</h1>
+      <div class="text-slate10 flex items-center gap-2">
+        <span>{formattedPubDate}</span>
+      </div>
+    </div>
+    
+    <Content /> <!-- ✅ Render the Markdown content here -->
+    
+  </div>
+
+</PageLayout>
+
+<script src="//unpkg.com/heti/umd/heti-addon.min.js" is:inline></script>
+<script>
+  const backBtn = document.getElementById('back');
+  backBtn?.addEventListener('click', () => {
+    window.location.href = '/';
+  });
+
+  const heti = new Heti('.blog-content');
+  heti.autoSpacing();
+</script>
