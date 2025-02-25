@@ -5,7 +5,7 @@ description: "Texas Convergent Workshop Schedule for Spring25"
 ---
 
 ## Product Workshop Timeline
-- [**Intro to PM**](/workshop/wireframing-sp25)
+- [**Intro to PM**](/workshop/what-is-pm-sp25)
 - [**Resumes for Product, Consulting, etc.**](/workshop/pm-resume-sp25)
 - **Acing Behavioral Interviews** - 3/9 @ 1-2 PM  
 - **Intro to Product Interviews** - 3/30 @ 1-2 PM  
