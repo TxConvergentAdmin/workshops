@@ -4,6 +4,7 @@ description: This workshop details what interviewers look for during behavioral 
 tags:
   - Fall-24
   - Product
+  - Interviews
 pubDate: 2024-11-10
 ---
 

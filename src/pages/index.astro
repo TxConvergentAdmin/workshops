@@ -30,10 +30,27 @@ const tagCounts = postCollection.reduce<Record<string, number>>(
   },
 );
 
-const tags = Object.keys(tagCounts).map((tag) => ({
-  name: tag,
-  count: tagCounts[tag],
-}));
+const priorityOrder = [
+  'All', 'Spring-25', 'Fall-24', 'Tech', 'Product', 
+  'Design', 'Frontend', 'Backend', 'APIs', 'AI', 'Interviews'
+];
+
+const tags = Object.keys(tagCounts)
+  .map((tag) => ({
+    name: tag,
+    count: tagCounts[tag],
+  }))
+  .sort((a, b) => {
+    const indexA = priorityOrder.indexOf(a.name);
+    const indexB = priorityOrder.indexOf(b.name);
+
+    if (indexA !== -1 && indexB !== -1) {
+      return indexA - indexB; // Sort based on priority order
+    }
+    if (indexA !== -1) return -1; // Prioritize defined tags
+    if (indexB !== -1) return 1;
+    return a.name.localeCompare(b.name); // Default alphabetical for others
+  });
 
 const posts = [...postCollection]
   .sort((a, b) => b.data.pubDate!.getTime() - a.data.pubDate!.getTime())

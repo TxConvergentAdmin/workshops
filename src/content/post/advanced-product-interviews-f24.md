@@ -4,6 +4,7 @@ description: This workshop covers how to work through product estimation and exe
 tags:
   - Fall-24
   - Product
+  - Interviews
 pubDate: 2024-12-09
 ---
 

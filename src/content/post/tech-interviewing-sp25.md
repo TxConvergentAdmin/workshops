@@ -4,6 +4,7 @@ description: This workshop reviews the overall structure of a tech interview and
 tags:
   - Spring-25
   - Tech
+  - Interviews
 pubDate: 2025-02-10
 ---
 

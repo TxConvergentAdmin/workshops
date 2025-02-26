@@ -4,6 +4,7 @@ description: This workshop details the basics of PM interviewing, including the 
 tags:
   - Fall-24
   - Product
+  - Interviews
 pubDate: 2024-10-28
 ---
 
