@@ -1,15 +1,16 @@
 ---
 title: Wireframing 101
-description: This workshop describes what wireframing is, UI components, and best practices when communicating your design at an early stage.
+description: Learn how to communicate your design at an early stage through wireframing and explore the basic UI component types that form the foundation of any interface.
 tags:
   - Spring-25
   - Design
+  - Figma
 pubDate: 2025-02-10
 ---
 
 ## Description
 
-This workshop describes what wireframing is, UI components, and best practices when communicating your design at an early stage.
+Learn how to communicate your design at an early stage through wireframing and explore the basic UI component types that form the foundation of any interface.
 
 ## Slides
 

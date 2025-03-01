@@ -1,15 +1,16 @@
 ---
 title: Sketching Success - Design Recruitment
-description: This workshop covers topics related to recruiting for design roles, including building a portfolio, applying to roles, and interviewing.
+description: Learn how to navigate the design recruitment process and land your dream role with insights from students who have successfully done it. Gain guidance on portfolio building, behavioral interviews, technical interviews/design challenges, and where to apply.
 tags:
   - Spring-25
   - Design
+  - Interviews
 pubDate: 2025-02-24
 ---
 
 ## Description
 
-This workshop covers topics related to recruiting for design roles, including building a portfolio, applying to roles, and interviewing.
+Learn how to navigate the design recruitment process and land your dream role with insights from students who have successfully done it. Gain guidance on portfolio building, behavioral interviews, technical interviews/design challenges, and where to apply.
 
 ## Slides
 
