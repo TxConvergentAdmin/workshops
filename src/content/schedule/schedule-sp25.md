@@ -8,14 +8,14 @@ description: "Texas Convergent Workshop Schedule for Spring25"
 - [**Intro to PM**](/workshop/what-is-pm-sp25)
 - [**Resumes for Product, Consulting, etc.**](/workshop/pm-resume-sp25)
 - [**Acing Behavioral Interviews**](/workshop/acing-behavioral-interviews-sp25)
-- **Intro to Product Interviews** - 3/30 @ 1-2 PM  
+- [**Intro to Product Interviews**](/workshop/intro-product-interviews-sp25)  
 - **Advanced Product Interviewing (w/ P@TX)** - 4/5 @ 1-2 PM  
 
 ## Design Workshop Timeline
 - [**Intro to Figma/Wireframing**](/workshop/wireframing-sp25) 
 - [**Design Recruiting Q&A / AMA (w/ TPEO or Design@UT)**](/workshop/design-recruitment-sp25) 
 - [**UI Branding**](/workshop/ui-branding-sp25)
-- **Advanced Figma Prototyping** - 3/30 @ 1-2 PM  
+- [**Advanced Figma Prototyping**](/workshop/advanced-figma-prototyping-sp25)
 
 ## Engineering Workshop Timeline
 - [**Tech Interviewing**](/workshop/tech-interviewing-sp25) 
