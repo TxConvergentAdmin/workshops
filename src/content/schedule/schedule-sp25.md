@@ -22,4 +22,4 @@ description: "Texas Convergent Workshop Schedule for Spring25"
 - [**React + Backend Integration**](/workshop/reactbackend-sp25) 
 - [**APIs + Integrating Third Party API Tools**](/workshop/creatingusing-apis-sp25) 
 - [**AI/ML Beginner**](/workshop/ai-ml-beginner-sp25) and [**AI/ML Advanced**](/workshop/ai-ml-advanced-sp25)
-- **Member’s Choice Workshop** - 4/13 @ 2-3:30 PM in TBD  
+- **Cloud Deployment and Servers** - 4/13 @ 2-3:30 PM in TBD  
